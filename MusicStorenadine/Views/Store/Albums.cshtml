@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<MusicStorenadine.Models.Album>
+
+@{
+    ViewData["Title"] = "Albums";
+}
+
+<h2>Albums</h2>
+
+@foreach (var album in Model)
+{
+    <li>@album.Name</li>  
+}
+<ul>
